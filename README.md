@@ -108,32 +108,42 @@ You have three RequestListeners:
 
 - Router
 - Controller Executer
-- Page Displayer
+- Response Displayer
 
 
-
+Router
+---------
 The Router analyzes the Request and decides which Controller should handle it.
 
 Alert: new word: Controller!
 
-A Controller is just a fancy term, specific to this system, to represent an object responsible for handling a specific Request.
-A Controller also returns a Response.
+A Controller is just a fancy term, specific to this system (with three main RequestListeners), to represent 
+an object responsible for handling a Request and return a corresponding Response.
 
-Alert: new word: Response!
+The Response is also an object, internal to this system, which represents the Response of the Controller to the Request.
 
-todo...
+In the case of web applications, the Response is mostly used to hold the content of the page to display. 
 
-It's like the Application, except that the Controller handles a specific Request, whereas the Application
-can handle any Request.
+Again, the Response is internal to this system and doesn't exist outside of the Application.
+More on the Response before the end of this section.
 
 
-So, back to the Router. The Router just decide which Controller to use, but actually doesn't execute it.
+So, back to the Router for now. The Router just decide which Controller to use, but actually doesn't execute it.
 
 Instead, it adds the name of the Controller to use to the Request (via the parameters).
 
-
 Then we have the Controller Executer. As you can guess, this RequestListener will see if a Controller name was 
 set in the Request parameters, and if so, it will execute it.
+
+
+
+The Response Displayer is the last step in this system, it converts the Response (if any) into a visible output
+for the user.
+
+The technique of first configuring the Response, and then display it gives us some flexibility.
+For instance, we can decorate the Response before it is displayed.
+
+
 
 The Controller returns a Response, that's another characteristic of the Controller I forgot to mention earlier,
 
