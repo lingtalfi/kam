@@ -321,7 +321,7 @@ creating the services).
 
 Modules and hooks
 ===========
-2017-02-27
+2017-02-27 --> 2017-03-08
 
 Maybe it's a little early to talk about modules, but since I've talked about them in the previous section,
 I now have them in mind, so let's see what I have to say about them.
@@ -351,7 +351,8 @@ menu with their own items.
 
 So, you create a hook (more on hooks later), to which module can subscribe.
 
-Then when the hook is executed, it displays the items added by the subscribing modules.
+Then when the hook is executed, modules can bring their own menu items, and so the menu is composed of the items 
+added by the subscribing modules.
 
 
 I believe this example is the main reason why we need modules in the first place.
