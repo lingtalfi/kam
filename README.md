@@ -1,6 +1,6 @@
 Kam
 ============
-2017-02-27
+2017-02-27 --> 2017-03-10
 
 
 
@@ -660,7 +660,7 @@ Did you notice that if we want to switch the theme of a widget, we just need to 
 
 Layout
 ------------
-2017-02-28
+2017-02-28 --> 2017-03-10
 
 So, in a web page, we have page elements, which are represented by widgets, as we've just seen.
 
@@ -726,7 +726,7 @@ Basically, the idea is that the Controller can override anything if wants to,
 but most of the code is implicitly handled internally by objects such as the Layout object.
 
 For instance in the pseudo code above, we can imagine that the templates of the widgets are set automatically
-byt he layout, based on their names, and that there is also a default loader (object which converts the name
+by the layout, based on their names, and that there is also a default loader (object which converts the name
 of a template into an actual template string), and a default renderer (object that injects the variables into the 
 template and returns the rendered result) injected automatically by the Layout.
 
