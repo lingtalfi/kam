@@ -517,7 +517,7 @@ so this means it controls every aspect of the page.
 
 Data, variables and model
 -------------------
-2017-02-28
+2017-02-28 --> 2017-03-10
 
 Let's imagine we're a boss, and we're telling two persons to create a template which should display the 
 name of the person.
@@ -552,7 +552,7 @@ The data is just as abstract as an idea; it has no body, and no implementation b
 
 To pass the "data" to a template, we define variables.
 
-So, back to our example, if give the following variables:
+So, back to our example, if the following variables were given:
 
 
 ```php 
